@@ -1,0 +1,39 @@
+<div *ngIf="gameOver">
+    <div>
+        <label style="font-size: 20px">Enter board size:</label>
+        <br>
+        <input type="text" id="boardsize" name="boardsize" #boardsize>
+    </div>
+    <br>
+    <button style="font-size: 40px" (click)="newGame(boardsize.value)">Start new Game</button>
+    
+</div>
+
+
+
+
+
+<p style="font-size: 20px" *ngIf="!gameOver"> It's {{player}}'s turn!</p>
+
+<h2 *ngIf="gameOver && played_once_already">
+    Game result: {{result}}!
+</h2>
+
+
+
+<div style="font-size: 16px" *ngIf="cycle.size != 0"> It's a cycle! Choose the square to control and then what to collapse it into!</div>
+<button id="colapse-button"
+    *ngFor="let val of colapse_choice; let i = index"
+    (click)="colapse(i)"> {{val}}
+</button>
+
+<main>
+    <app-square
+    *ngFor="let val of squares; let i = index;"
+    [value]="val"
+    [col_last]="i == last_idx"
+    [to_colapse]="cycle.has(i)"
+    (click)="makeMove(i)">
+    </app-square>
+
+</main>

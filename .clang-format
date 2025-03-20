@@ -1,0 +1,21 @@
+﻿---
+BasedOnStyle: WebKit
+AllowAllConstructorInitializersOnNextLine: 'true'
+AllowShortCaseLabelsOnASingleLine: 'true'
+AllowShortLambdasOnASingleLine: All
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: 'false'
+BreakBeforeBraces: Attach
+BreakConstructorInitializers: AfterColon
+ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
+Cpp11BracedListStyle: 'true'
+Language: Cpp
+MaxEmptyLinesToKeep: '2'
+SpaceAfterCStyleCast: 'false'
+SpaceAfterTemplateKeyword: 'false'
+SpaceBeforeInheritanceColon: 'true'
+SpaceBeforeParens: Never
+UseTab: Never
+
+...

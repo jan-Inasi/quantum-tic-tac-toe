@@ -1,0 +1,6 @@
+add_executable(server-qttt main.cpp)
+target_link_libraries(server-qttt PRIVATE restinio::restinio)
+target_include_directories(server-qttt PRIVATE ../include)
+target_compile_features(server-qttt PRIVATE cxx_std_20)
+target_link_libraries(server-qttt PRIVATE nlohmann_json::nlohmann_json)
+target_link_libraries(server-qttt PUBLIC qttt_lib)
