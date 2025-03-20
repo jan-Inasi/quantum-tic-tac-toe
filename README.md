@@ -1,9 +1,9 @@
 # ZPR - quantum tic tac toe
 
+Gra komputerowa Kwantowe kółko i krzyżyk. Napisana w dwuosobowym zespole na przedmiot Zaawansowane Programowanie w C++ w 2022 r. Przeniesiona z uczelnianego repozytorium.
 
 
 ### konfiguracja
-
 
 pobranie managera pakietów vcpkg
 ```
